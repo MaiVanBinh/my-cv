@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="tech.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="js.ico">
     <title>Mai Văn Bình - Backend Developer Resume</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section class="banner" id="home"> 
@@ -27,174 +29,206 @@
             </div>
         </header>
         <img src="./assets/bg.jpg" alt="">
-        <div class="content">
-            <h2>I'm Mai Van Binh</h2>
-            <h3 class="site-slogan">A Fresher Backend Developer</h3>
-            <div class="social-link">
-                <ul class="social-profiles">
-                    <li class="item"><a href="https://github.com/MaiVanBinh" target="_blank"><img src="./assets/github.png" alt=""><span>Github</span></a></li>
-                    <li class="item"><a href="https://www.facebook.com/MVBinh99" target="_blank"><img src="./assets/facebook.png" alt=""><span>Facebook</span></a></li>
-                </ul>
+        <div class="header-content">
+            <div class="container">
+                <div class="site-title">
+                    <h1 class="site-name">I’m Mai Van Binh</h1>
+                </div>
+                <h3 class="site-slogan">A Fresher Backend Developer</h3>
+                <div class="social-link">
+                    <ul class="social-profiles">
+                        <li class="item"><a href="https://github.com/MaiVanBinh" class="fa-github"><span>Github</span></a></li>
+                        <li class="item"><a href="https://www.facebook.com/MVBinh99" class="fa-facebook"><span>Facebook</span></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+    <div id="banner" class="transparent-section" data-image="images/header-bg.jpg" data-color="26, 188, 156" data-transparency="0.80">
+        <div class="transparent-content parallax-style">
+            
+            <!-- /.header-content -->
+        </div>
+        <!-- /.transparent-content -->
+    </div>
     <!-- about me -->
-    <section class="about" id="about">
-        <div class="contentBx">
-            <h2 class="heading">About me</h2>
-            <p class="text">I'm Mai Van Binh, an IT student of the University of Information Technology , with basic knowledge of Database Design, Design Pattern, Object-Oriented Analysis and Design.</p>
-            <p class="text">
-                Learning new languages and technologies is what I am passionate about.
-                I am considered a team-player because I like to help other and tend to work well within groups in school.
-                I can also do some mentoring tasks and do code reviewing for other team members.</p>
-            <p class="text">
-                I like helping other and work well with group.
-                I can also do some mentoring tasks and code reviewing for other members.</p>
-            <h2 class="heading">Contact</h2>
-            <ul>
-                <li>
-                    <img src="./assets/mail.png" alt="">
-                    <a href="mailto:huyhoang8a5@gmail.com" class="text" style="text-decoration: none; color: #1fb5ac; word-wrap: break-word;">maivanbinh1321999@gmail.com</a>
-                </li>
-                <li>
-                    <img src="./assets/phone.png" alt="">
-                    <span class="text"> +84 967607690</span>
-                </li>
-                <li>
-                    <img src="./assets/address.png" alt="">
-                    <span class="text"> Thu Duc, HoChiMinh</span>
-                </li>
-            </ul>
+    <section id="about" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">About me</h2>
         </div>
-        <div class="imgBx"></div>
-    </section>
-    <section class="skills" id="skills">
-        <h2 class="heading">My Skills</h2>
-        <div class="container">
-            <div class="skillBx">
-                <div class="skillItems">
-                    <h2>PROGRAMMING LANGUAGES</h2>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML, CSS</li>
-                        <li>Basic: Python, C# .NET</li>
-                    </ul>
+        <div class="about-container">
+            <div class="container">
+                <div class="col-md-3" data-scroll-reveal="enter from the left after .5s">
+                    <div class="profile-photo section-box">
+                        <img src="./assets/profile-img.png" alt="Huy Hoang" class="profile-image img-responsive">
+                    </div>
                 </div>
-                <div class="skillItems">
-                    <h2>FRAMEWORKS & PLATFORMS</h2>
-                    <ul>
-                        <li>ReactJS/ NodeJS</li>
-                        <li>RestfulAPI, Graphql, Json, Xml</li>
-                        <li>Javascript SDK: FacebookSDK, Firebase, MongoLab API</li>
-                        <li>Basic: Google cloud, Amazon Web Services & Diango</li>
-                    </ul>
+                <div class="col-md-6" data-scroll-reveal="enter from the right after .5s">
+                    <div class="profile-details section-box">
+                        <h2 class="title">Summary</h2>
+                        <div class="about-content">
+                            <p>I'm Mai Van Binh, an IT student of the University of Information Technology , with basic knowledge of Database Design, Object-Oriented Analysis.</p>
+                            <p>
+                                I am considered a team-player because I like to help other and tend to work well within groups in school.
+                                I can also do some mentoring tasks and do code reviewing for other team members.</p>
+                            <p>I want to apply for a backend internship with nodejs.</p>
+                        </div>
+                        <a href="assets/1_updated_my_cv.pdf" target="_blank" class="btn fa-download download-btn">My CV</a>
+                    </div>
                 </div>
-            </div>
-            <div class="skillBx">
-                <div class="skillItems">
-                    <h2>DATABASE</h2>
-                    <ul>
-                        <li>MongoDb</li>
-                        <li>Mysql, postgresql</li>
-                        <li>Sql server & Oracle</li>
-                    </ul>
-                </div>
-                <div class="skillItems">
-                    <h2>VERSION CONTROL</h2>
-                    <ul>
-                        <li>Git (Git Shell & Github)</li>
-                        <li>Bitbucket</li>
-                    </ul>
-                </div>
-                <div class="skillItems">
-                    <h2>IDE</h2>
-                    <ul>
-                        <li>Visual studio code</li>
-                        <li>Webstorm</li>
-                        <li>Visual studio 2019</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="skillBx">
-                <div class="skillItems">
-                    <h2>FOREIGN LANGUAGE</h2>
-                    <ul>
-                        <li>TOEIC: 700/990</li>
-                    </ul>
-                </div>
-                <div class="skillItems">
-                    <h2>KNOWLEDGE</h2>
-                    <ul>
-                        <li>Understanding about OOP, Design Pattern, SOLID principles, Dependency Injection, .</li>
-                        <li>Understanding about the Agile and Scrum process - Basic</li>
-                        <li>Understanding software design, database design, RestfulAPI, ...</li>
-                        <li>Good time management, presentation and teamwork skills ...</li>
-                    </ul>
+                <div class="col-md-3" data-scroll-reveal="enter from the right after .5s">
+                    <div class="profile-details section-box">
+                        <h2 class="title">Contact Info</h2>
+                        <address>
+                            <ul class="address-line">
+                                <li class="fa-map-marker">Thu Duc, HoChiMinh</li>
+                                <li class="fa-phone">+84 967607690</li>
+                                <li class="fa-envelope"><a href="mailto:maivanbinh1321999@gmail.com" style="word-wrap:break-word;">maivanbinh1321999@gmail.com</a></li>
+                            </ul>
+                        </address>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="experiences" id="experiences">
-        <div class="contentBx">
-            <h2 class="heading">EDUCATION</h2>
-        </div>
-        <div>
-            <div class="education-item">
-                <div class="edu-time light-green">
-                    <p>2015
-                        <br> -
-                        <br> 2017</p>
-                </div>
-                <!-- /.edu-time -->
-                <div class="edu-title">
-                    <p class="edu-session">ADVANCED PROGRAM in Information Systems</p>
-                    <p class="edu-inst">University of Information Technology</p>
-                </div>
-                <!-- /.edu-title -->
-                <div class="edu-comments">
-                    <ul>
-                        <li>Current GPA: 8.77/10. Degree grade: Good</li>
-                        <li>Team leader in all projects.</li>
-                    </ul>
-                </div>
-                <!-- /.edu-comments -->
-            </div>
-        </div>
+        <!-- /.about-container -->
     </section>
     <!-- Tech -->
-    <section class="experiences" id="education">
-        <div class="contentBx">
-            <h2 class="heading">EXPERIENCES</h2>
+    <section id="skills" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">SKILLS</h2>
         </div>
-        <div>
-            <div class="experience-item">
-                <div class="name-designation">
-                    <h3 class="designation">Simple Projects</h3>
-                    <p class="name-of-org"></p>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="skills-container">
+                <div class="col-md-4" data-scroll-reveal="enter from the left after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Programming languages</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML, CSS</li>
+                        </ul>
+                        <h2 class="box-title">Frameworks & platforms</h2>
+                        <ul>
+                            <li>ReactJS/ NodeJS</li>
+                            <li>RestfulAPI, Graphql, Json</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stay-time light-violet">
-                    <p>
-                        <br> All the time
-                    </p>
+                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Database</h2>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Microsoft SQL</li>
+                        </ul>
+                        <h2 class="box-title">Version Control</h2>
+                        <ul>
+                          <li>Git (Git Shell & Github)</li>
+                        </ul>
+                        <h2 class="box-title">IDE</h2>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- /.stay-time -->
-                <div class="comments" data-scroll-reveal="enter from the right after .5s">
-                    <p>In my free time, I work on some pet projects: <a href="https://github.com/MaiVanBinh">https://github.com/MaiVanBinh</a></p>
-                    <ul>
-                        <li><a href="#" class="bold">Weather-app</a>: An website that can show the temperature base on input is location.<b>(NodeJS)</b>
-                            - <a href="https://github.com/MaiVanBinh/weather-app" target="_blank">Github</a>
-                        </li>
-                        <li><a href="https://assignment5th.herokuapp.com/" class="bold">Basic shop</a>: Can sale anything.<b>(NodeJS)</b>
-                            - <a href="https://github.com/conanak99/facebook-chat-bot" target="_blank">Github</a>
-                        </li>
-                        <li><a href="https://ass6-client.herokuapp.com/" class="bold">Burger Builder</a>: Build a nice Burger by yourself.<b>(React + NodeJS)</b>
-                            - Client: <a href="https://github.com/MaiVanBinh/ass6-client" target="_blank">Github</a>
-                            - Server: <a href="https://github.com/MaiVanBinh/ass6-server" target="_blank">Github</a>
-                        </li>
-                    </ul>
+                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Knowledge</h2>
+                        <ul>
+                            <li>Understanding about OOP, Design Pattern, SOLID principles, Dependency Injection, .</li>
+                            <li>Understanding software design, database design, RestfulAPI, ...</li>
+                            <li>Good time management, presentation and teamwork skills ...</li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- /.skills-container -->
             </div>
+    </section>
+    <!-- /#skills -->
+    <section id="experiences" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">Experiences</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="experiences-container">
+                <div class="experience-items">
+                    <!-- /.experience-item -->
+                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
+                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
+                            <h3 class="designation">Projects</h3>
+                            <p class="name-of-org"></p>
+                        </div>
+                        <!-- /.name-designation -->
+                        <div class="stay-time light-violet">
+                            <p>
+                                <br/> All the time
+                            </p>
+                        </div>
+                        <!-- /.stay-time -->
+                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
+                            <p>Since May 2020, I work on the project:
+                            <ul>
+                                <li><a href="https://happy-cooking-app.herokuapp.com" target="_blank" class="bold" style="text-decoration: underline;">Happy Cooking</a>: 
+                                    This is my first project completed after reactjs and nodejs course. 
+                                    It's a cooking website with videos from YouTube. 
+                                    This website has shown all my knowledge and skills in web developer.<br />
+                                    <b>ReactJS:</b> - <a href="https://github.com/MaiVanBinh/happy-cooking-app" target="_blank">Github</a><br/>
+                                    <b>NodeJS:</b> - <a href="https://github.com/MaiVanBinh/happy-cooking-server" target="_blank">Github</a><br/>
+
+                                </li>
+                            </ul>
+                            </ul>
+                        </div>
+                        <!-- /.comments -->
+                    </div>
+                    <!-- /.experience-item -->
+                </div>
+                <!-- /.experience-items -->
+            </div>
+            <!-- /.experiences-container -->
         </div>
     </section>
-    
+    <!-- /#education -->
+    <section id="education" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">Education</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="education-container">
+                <div class="education-items">
+                    <div class="col-md-12" data-scroll-reveal="enter from the top after .5s">
+                      <!-- /.education-item -->
+                        <div class="education-item">
+                            <div class="edu-time light-blue">
+                                <p>2017
+                                    <br /> -
+                                    <br /> 2020</p>
+                            </div>
+                            <!-- /.edu-time -->
+                            <div class="edu-title">
+                                <p class="edu-session">ADVANCED PROGRAM in Information Systems</p>
+                                <p class="edu-inst">University of Information Technology</p>
+                            </div>
+                            <!-- /.edu-title -->
+                            <div class="edu-comments">
+                                <ul>
+                                    <li>Current GPA: 8.77/10. Degree grade: Good</li>
+                                    <li>Excellent student of 2/6 semesters (GPA≥ 9.0). Good student of 4/6 semester (GPA ≥ 8.0).</li>
+                                </ul>
+                            </div>
+                            <!-- /.edu-comments -->
+                        </div>
+                        <!-- /.education-item -->
+                    </div>
+                </div>
+                <!-- /.education-items -->
+            </div>
+            <!-- /.education-container -->
+        </div>
+        <!-- /.container -->
+    </section>
+</body>
 </html>
